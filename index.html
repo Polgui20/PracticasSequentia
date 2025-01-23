@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html  lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Sequentia</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JJRHFL0H9D"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-JJRHFL0H9D');
+</script>
+  </head>
+  <body>
+   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            var userLang = navigator.language || navigator.userLanguage;
+            console.log(userLang);
+            if (userLang == "en-US") {
+                window.location.href = "./en/"
+            }else if (userLang == "en-gb") {
+                window.location.href = "./en/"
+            }else if (userLang == "es-ES") {
+                window.location.href = "./es/"
+            }else if (userLang == "es-CT") {
+                window.location.href = "./ca/"
+            }else {
+                window.location.href = "./es/"
+            }
+        });
+    </script>
+  </body>
+</html>
